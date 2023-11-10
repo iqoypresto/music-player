@@ -42,7 +42,7 @@ const Search = () => {
                             </header>
                             <div className="track-item">
                                 {
-                                    data.searchData.map((music) => (
+                                    data.searchData.slice(0, 6).map((music) => (
                                         <MusicCard 
                                             img        ={music.album.cover_small} 
                                             name       ={music.title} 
