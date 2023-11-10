@@ -48,7 +48,7 @@ const Search = () => {
                                             name       ={music.title} 
                                             artistName ={music.artist.name} 
                                             albumName  ={music.album.title} 
-                                            duration   ={`${parseInt(music.duration/60)}:${music.duration%60 >= 10 ? music.duration%60 : "0"+music.duration%60}`} />
+                                            duration   ={`0${parseInt(music.duration/60)}:${music.duration%60 >= 10 ? music.duration%60 : "0"+music.duration%60}`} />
                                     ))
                                 }
                             </div>
